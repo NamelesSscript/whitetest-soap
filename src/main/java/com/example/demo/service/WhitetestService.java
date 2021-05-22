@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.datatype.DatatypeConfigurationException;
@@ -24,8 +25,8 @@ public class WhitetestService {
         Boolean testExam=false;
         int id=0;
         int code=0;
-        List<Student> students = new Student().getAllStudents() ;
-        List<Exam> exams = new Exam().getAllExams() ;
+        List<Student> students = new ArrayList<Student>();
+        List<Exam> exams = new ArrayList<Exam>();
  
         
         for (int i=0;i<students.size();i++) {
